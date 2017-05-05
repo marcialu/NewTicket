@@ -1,0 +1,35 @@
+{
+    "application": {
+        "id": "",
+        "title": "NewTicket.NewTicket",
+        "description": "New Ticket",
+        "type": "SAP_UI5_Component",
+        "componentUrl": "/",
+        "appUrl": "#NewTicket-Display",
+        "navigationComponentName": "NewTicket",
+        "intentSemanticObject": "NewTicket",
+        "intentAction": "Display",
+        "html5ApplicationName": "newticket",
+        "HCPParentApplicationName": ""
+    },
+    "assignment": {
+        "groups": [
+            "52733954-2884-4b85-a7e2-699f09933f53"
+        ],
+        "contentPackages": [
+            "ce731657-0cb8-42fe-9eb3-023afc5d796d"
+        ],
+        "categories": []
+    },
+    "tile": {
+        "type": "StaticTile",
+        "title": "New Ticket",
+        "subtitle": "",
+        "searchKeywords": "New Ticket,",
+        "displayIconUrl": "sap-icon://create-form",
+        "displayInfoText": "",
+        "size": "1x1",
+        "serviceURL": "",
+        "refreshInterval": ""
+    }
+}
