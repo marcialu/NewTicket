@@ -9,6 +9,18 @@
 					<Label text="Description" required="false"/>
 					<Input name="Description" id="Description_id" valueLiveUpdate="true" liveChange="_validateSaveEnablement" enabled="true" visible="true"
 						value="{ path: 'Description', type: 'sap.ui.model.odata.type.String' , constraints:{ maxLength:40 } }"/>
+					<Label text="Priority" required="false"/>
+					<Input name="Priority" id="Priority_id" valueLiveUpdate="true" liveChange="_validateSaveEnablement" enabled="true" visible="true"
+						value="{ path: 'Priority', type: 'sap.ui.model.odata.type.String' , constraints:{ maxLength:1 } }"/>
+					<Label text="Status" required="false"/>
+					<Input name="Status" id="Status_id" valueLiveUpdate="true" liveChange="_validateSaveEnablement" enabled="true" visible="true"
+						value="{ path: 'Status', type: 'sap.ui.model.odata.type.String' , constraints:{ maxLength:1 } }"/>
+					<Label text="Solution Category ID" required="true"/>
+					<Input name="CategoryId" id="CategoryId_id" valueLiveUpdate="true" liveChange="_validateSaveEnablement" enabled="true" visible="true"
+						value="{ path: 'CategoryId', type: 'sap.ui.model.odata.type.String' , constraints:{ maxLength:5, nullable:false } }"/>
+					<Label text="Ticket Text" required="false"/>
+					<Input name="TicketTxt" id="TicketTxt_id" valueLiveUpdate="true" liveChange="_validateSaveEnablement" enabled="true" visible="true"
+						value="{ path: 'TicketTxt', type: 'sap.ui.model.odata.type.String' , constraints:{ maxLength:255 } }"/>
 		
 		</f:content>
 		</f:SimpleForm>
