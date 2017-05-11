@@ -1,15 +1,17 @@
 <mvc:View controllerName="NewTicket.controller.Detail" xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc" xmlns:semantic="sap.m.semantic"
-	xmlns:footerbar="sap.ushell.ui.footerbar">
+	xmlns:footerbar="sap.ushell.ui.footerbar" xmlns:f="sap.ui.layout.form">
 	<semantic:DetailPage id="page" navButtonPress="onNavBack" showNavButton="{device>/system/phone}" title="{i18n>detailTitle}"
 		busy="{detailView>/busy}" busyIndicatorDelay="{detailView>/delay}">
 		<semantic:content>
-			<ObjectHeader id="objectHeader" title="{Description}"></ObjectHeader>
-			<IconTabBar id="iconTabBar" class="sapUiResponsiveContentPadding">
-				<items>
-					<IconTabFilter id="iconTabBarFilter1" icon="sap-icon://hint" tooltip="{i18n>detailIconTabBarInfo}"></IconTabFilter>
-					<IconTabFilter id="iconTabBarFilter2" icon="sap-icon://attachment" tooltip="{i18n>detailIconTabBarAttachments}"></IconTabFilter>
-				</items>
-			</IconTabBar>
+				<f:SimpleForm class="editableForm" columnsL="1" columnsM="1" editable="true" emptySpanL="4" emptySpanM="4" id="newEntitySimpleForm"
+				labelSpanL="3" labelSpanM="3" layout="ResponsiveGridLayout" maxContainerCols="2" minWidth="1024" title='Create New Ticket'>
+				<f:content>
+					<Label text="Description" required="false"/>
+					<Input name="Description" id="Description_id" valueLiveUpdate="true" liveChange="_validateSaveEnablement" enabled="true" visible="true"
+						value="{ path: 'Description', type: 'sap.ui.model.odata.type.String' , constraints:{ maxLength:40 } }"/>
+		
+		</f:content>
+		</f:SimpleForm>
 		</semantic:content>
 		<semantic:editAction>
 			<semantic:EditAction id="edit" press="onEdit"/>
