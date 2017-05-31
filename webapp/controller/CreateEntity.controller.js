@@ -52,6 +52,8 @@ sap.ui.define([
 		 * @public
 		 */
 		onSave: function() {
+			//this._validateSaveEnablement();
+			
 			var that = this,
 				oModel = this.getModel();
 
