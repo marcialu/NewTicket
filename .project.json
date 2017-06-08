@@ -70,9 +70,9 @@
     "name": "newticket",
     "lastVersionWeTriedToDeploy": "1.0.0"
   },
-   "dataBinding": {
-     "/webapp/view/Master.view.xml": {
-       "entitySet": "/TICKETMYSet"
-     }
+  "dataBinding": {
+    "/webapp/view/Master.view.xml": {
+      "entitySet": "/TICKETMYSet"
+    }
   }
 }
